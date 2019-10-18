@@ -11,7 +11,7 @@
     <br />
     <span id="reserved">
       {{ $siteConfig.siteName }} &copy; {{ new Date().getFullYear() }} - Todos
-      Os Direitos Reservados
+      os Direitos Reservados
     </span>
     <br />
   </footer>
