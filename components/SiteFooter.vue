@@ -1,10 +1,19 @@
 <template>
-  <footer class="site-footer">
-    {{ $siteConfig.siteName }} &copy; {{ new Date().getFullYear() }} - All
-    Rights Reserved
+  <footer class="site-footer is-black">
+    <bold>
+      <span>
+        Rodovia João Gualberto Soares, 789, Sala 03 - Ingleses do Rio Vermelho
+      </span>
+    </bold>
     <br />
-    Made with <span style="color: #e25555;">&#9829;</span> with Nuxt.js and
-    Netlify
+    <span>(48) 3197-1525</span> -
+    <span>Contato@zeusservicoscontabeis.com.br</span>
+    <br />
+    <span id="reserved">
+      {{ $siteConfig.siteName }} &copy; {{ new Date().getFullYear() }} - Todos
+      Os Direitos Reservados
+    </span>
+    <br />
   </footer>
 </template>
 
@@ -16,9 +25,14 @@ export default {
 
 <style scoped>
 footer {
-  background: #eee;
+  background: rgb(0, 0, 0);
   padding: 20px 10px;
   text-align: center;
   transition: 0.5s ease all;
+  color: goldenrod;
+}
+#reserved {
+  font-size: 14.5px;
+  font-weight: 300;
 }
 </style>

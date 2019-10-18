@@ -9,36 +9,26 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Zeus',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
-  featureImage: '/uploads/home-hero.jpg',
-  logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
+  siteName: 'Zeus Serviços Contábeis',
+  tagline: 'Serviços Contábeis',
+  featureImage: '/uploads/home-hero2.jpg',
+  logo: '/LOGO-GOLD.png', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
     id: process.env.GOOGLE_ANALYTICS_ID
   },
   mainMenu: [
     {
-      name: 'About',
+      name: 'Sobre',
       link: '/about'
     },
     {
-      name: 'Contact',
-      link: '/contact'
-    },
-    {
-      name: 'Categories',
+      name: 'Serviços',
       link: '/categories'
     },
     {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'http://awake-premium-lp.danielkelly.io/',
-      target: '_blank'
+      name: 'Fale Conosco ',
+      link: '/contact'
     }
   ],
   hero: {

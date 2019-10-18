@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar has-shadow is-fixed-top"
+    class="navbar has-shadow is-black is-fixed-top"
     role="navigation"
     aria-label="main navigation"
   >
@@ -20,15 +20,15 @@
     <div
       :class="{
         'navbar-menu': true,
-        'is-active': active
+        'is-active': false
       }"
     >
       <ul class="navbar-end">
         <li
           v-for="item in $siteConfig.mainMenu"
           :key="item.link"
-          class="navbar-item"
-          @click="active = false"
+          class="navbar-item is-dark"
+          @click="active = true"
         >
           <component
             :is="item.link.startsWith('http') ? 'a' : 'nuxt-link'"
@@ -38,9 +38,6 @@
           >
             {{ item.name }}
           </component>
-        </li>
-        <li class="navbar-item site-search-wrapper">
-          <site-search />
         </li>
       </ul>
     </div>
@@ -63,6 +60,7 @@ export default {
 .navbar-item img {
   max-height: 2rem;
 }
+
 .site-search-wrapper {
   transform: translateX(5px);
   @media (max-width: 1023px) {
